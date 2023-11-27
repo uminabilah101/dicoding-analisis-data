@@ -59,7 +59,7 @@ datetime_columns = ["dteday"]
 df_hour.sort_values(by="dteday", inplace=True)
 df_hour.reset_index(inplace=True)
 
-st.header('Bike Rent Analysis')
+st.header('Bike Rental Analysis')
 
 for column in datetime_columns:
     df_hour[column] = pd.to_datetime(df_hour[column])
